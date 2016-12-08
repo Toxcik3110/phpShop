@@ -59,7 +59,7 @@ class Router
 
                 $controllerObject = new $controllerName;
 
-                $result = call_user_func(array($controllerObject->$actionName($parameters)));
+                $result = call_user_func(array($controllerObject, $actionName),$parameters);
 
                 if($result != null) {
                     break;
