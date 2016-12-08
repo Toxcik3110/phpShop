@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    height: 20%;
+    background-color: red;
+}
+.wrapper{
+    display: inline-block;
+    height: 100%;
+}
+.sidebar {
+    width: 20%;
+}
+.content {
+    width: 80%;
+}
+.footer {
+    height: 20%;
+    width: 100%;
+}

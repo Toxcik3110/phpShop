@@ -41,6 +41,7 @@ class Router
 
                 //KOSTЫЛЬ
                 $buffer = array_shift($segments);
+                // echo print_r($segments);
 
                 $controllerName = array_shift($segments).'Controller';
                 $controllerName = ucfirst($controllerName);
