@@ -6,5 +6,6 @@
         // 'news' => 'news/index',
         // 'products' => 'product/list',
         'shop' => 'site/index',
+        'product/([0-9]+)' => 'product/view/$1',
     );
  ?>
