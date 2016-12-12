@@ -67,6 +67,18 @@
             text-decoration: none;
             color: black;
         }
+        .pagination{
+            display: inline-block;
+            width: 20px;
+            padding: 15px;
+            text-align: center;
+            font-size: 20pt;
+            margin:10px;
+            background-color: #ffffff;
+        }
+        .active {
+            background-color: #ffaa55;
+        }
         </style>
     </head>
     <body>

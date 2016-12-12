@@ -6,7 +6,7 @@
         <div class="array">
             <?php foreach ($categories as $categoryItem): ?>
                 <div class="elemV">
-                    <a href="/category/<?php echo $categoryItem['id']; ?>">
+                    <a href="/test/catalog/<?php echo $categoryItem['id']; ?>">
                         <?php echo $categoryItem['name']; ?>
                     </a>
                 </div>

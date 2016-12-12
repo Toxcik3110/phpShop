@@ -6,7 +6,7 @@
                     Content
                 </div>
                 <div class="array">
-                    <?php foreach ($latestProducts as $product): ?>
+                    <?php foreach ($categoryProducts as $product): ?>
                         <div class="elemC">
                             <div class="subTitle">
                                 <?php echo $product['name'] ?>
@@ -15,7 +15,14 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
+                <!-- <div class="pagination">
+
+                </div> -->
+                <?php echo $pagination->get(); ?>
             </div>
             <div class="clearfix"></div>
+
+
+
         </div>
 <?php include ROOT.'./views/layouts/footer.php' ?>

@@ -3,10 +3,11 @@
             <?php include ROOT.'./views/layouts/sidebar.php' ?>
             <div class="content">
                 <div class="title">
-                    Content
+                    <?php echo $product['name'] ?>
                 </div>
                 <div class="elemC">
-                    Some info
+                    Brand:<b><?php echo $product['brand'] ?></b><br>
+                    Price:<b>$<?php echo $product['price'] ?></b><br>
                 </div>
             </div>
             <div class="clearfix"></div>
