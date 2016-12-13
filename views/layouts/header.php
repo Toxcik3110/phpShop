@@ -79,6 +79,28 @@
         .active {
             background-color: #ffaa55;
         }
+        .registerForm>input, .registerForm>button {
+            display: block;
+            margin: 10px auto;
+            font-size: 16pt;
+        }
+        ul .error {
+            list-style-type: none;
+            background-color: rgba(255, 0, 0, 0.54);
+            width: 20%;
+            font-size: 15pt;
+            padding: 20px;
+        }
+        .headerElems {
+            width: 40%;
+            margin: 0 0 0 55%;
+            padding: 20px;
+        }
+        .headerElems>li {
+            display: inline;
+            width: 10%;
+            margin: 0 30px;
+        }
         </style>
     </head>
     <body>
@@ -86,6 +108,14 @@
         <!-- sidepanel -->
         <div class="header">
             <div class="title">
-                header
+                <ul class="headerElems">
+                    <li><a href="#">Cart</a></li>
+                    <?php if(User::isGuest()): ?>
+                    <li><a href="/test/user/login">Log in</a></li>
+                    <?php else: ?>
+                    <li><a href="/test/cabinet/">Dashboard</a></li>
+                    <li><a href="/test/user/logout">Log out</a></li>
+                    <?php endif; ?>
+                </ul>
             </div>
         </div>
